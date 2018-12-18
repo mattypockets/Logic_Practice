@@ -1,9 +1,10 @@
-let array = [1,2,2,3,4,5]
+let array = [1,2,2,3,4,2,3,5]
 
 let removeDuplicate = (n) => {
+    workingArray = n.sort()
     newArray = []
-    for (i = 0; i < n.length; i++) {
-        current = n[i];
+    for (i = 0; i < workingArray.length; i++) {
+        current = workingArray[i];
 
         if (i === 0) {
             newArray.push(current);
@@ -17,5 +18,6 @@ let removeDuplicate = (n) => {
 
     console.log(newArray)
 }
+
 
 removeDuplicate(array)
