@@ -15,3 +15,24 @@ let findMissing = (input) => {
 }
 
 findMissing(array);
+
+
+// Second Attempt w/o for loop
+
+let array = [1,2,3,4,5,6,7,8,9,10,11,12,13,15,16,17]
+
+let findMissing = (input) => {
+    
+
+    let actualSum = (total, num) => {
+        return total + num;
+    }
+
+    highestTotal = (input[input.length-1]*(input[input.length-1]+1))/2;
+
+    actualTotal = input.reduce(actualSum);
+
+    console.log("The missing number is " + (highestTotal - actualTotal))
+}
+
+findMissing(array)
